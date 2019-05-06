@@ -1,0 +1,5 @@
+Import ('env')
+
+localFiles = Glob('*.cpp')
+localProgram = env.Program (target='xcap', source=localFiles)
+Return ('localProgram')
